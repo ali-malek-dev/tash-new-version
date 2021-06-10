@@ -79,6 +79,18 @@
               </ul>
             </li>
             <li><a class="active" href="contact.html">تماس با ما</a></li>
+            <li>
+              <button
+                class="
+                  open-modal
+                  login-button
+                  btn-get-started
+                  animate__animated animate__fadeInUp
+                "
+              >
+                ورود
+              </button>
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -160,24 +172,24 @@
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
                     <input
-                      type="email"
+                      type="tel"
                       class="form-control"
-                      name="email"
-                      id="email"
-                      placeholder="ایمیل"
+                      name="phone"
+                      id="phone"
+                      placeholder="شماره تماس"
                       required
                     />
+                    <div class="form-group mt-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="ایمیل"
+                        required
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input
-                    type="tel"
-                    class="form-control"
-                    name="phone"
-                    id="phone"
-                    placeholder="شماره تماس"
-                    required
-                  />
                 </div>
                 <div class="form-group mt-3">
                   <input
@@ -338,6 +350,41 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <!-- Login Form -->
+
+    <form class="login-form login-modal hidden" method="post">
+      <i class="bx bx-window-close close-modal"></i>
+
+      <h2 class="visually mb-5\">ورود به حساب کاربری</h2>
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control"
+          name="username"
+          placeholder="نام کاربری یا ایمیل"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          placeholder="رمز عبور"
+        />
+      </div>
+      <div class="mb-5">
+        <button class="btn btn-primary d-block w-100" type="submit">
+          ورود
+        </button>
+      </div>
+      <a class="forgot1" href="#">حساب کاربری ندارید؟ <u>ثبت نام کنید</u></a
+      ><a class="forgot1" href="#">
+        نام کاربری یا رمز عبور خود را فراموش کرده اید؟</a
+      >
+    </form>
+    <div class="overlay hidden"></div>
+
+    <!-- End Login Form -->
 
     <a
       href="#"

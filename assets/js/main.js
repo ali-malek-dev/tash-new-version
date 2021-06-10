@@ -290,3 +290,16 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+
+const showInput = function (that) {
+  if (that.value == "کشور") {
+    document.querySelector(".country-field").style.display = "block";
+    document.querySelector(".conv-field").style.display = "none";
+  } else if (that.value == "کنوانسيون") {
+    document.querySelector(".conv-field").style.display = "block";
+    document.querySelector(".country-field").style.display = "none";
+  } else {
+    document.querySelector(".conv-field").style.display = "none";
+    document.querySelector(".country-field").style.display = "none";
+  }
+};

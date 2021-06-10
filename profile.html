@@ -79,6 +79,18 @@
               </ul>
             </li>
             <li><a href="contact.html">تماس با ما</a></li>
+            <li>
+              <button
+                class="
+                  open-modal
+                  login-button
+                  btn-get-started
+                  animate__animated animate__fadeInUp
+                "
+              >
+                ورود
+              </button>
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -147,9 +159,19 @@
                         <span>-</span>
                       </p>
                     </div>
-                    <div class="col-12 text-center">
+                    <div class="col-12 col-lg-6 text-center">
+                      <a href="#" class="btn-link-border form-account-link">
+                        احراز هویت
+                      </a>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center">
                       <a href="#" class="btn-link-border form-account-link">
                         ویرایش اطلاعات شخصی
+                      </a>
+                    </div>
+                    <div class="col-12 text-center">
+                      <a href="#" class="btn-link-border form-account-link">
+                        تغییر رمز عبور
                       </a>
                     </div>
                   </div>
@@ -181,6 +203,9 @@
                           <button class="btn-action btn-action-remove">
                             <span>پايان کار</span>
                           </button>
+                          <button class="btn-action btn-action-remove">
+                            <span>اقاله قرارداد</span>
+                          </button>
                         </div>
                       </div>
                       <div class="profile-recent-fav-row">
@@ -201,6 +226,9 @@
                         >
                           <button class="btn-action btn-action-remove">
                             <span>پايان کار</span>
+                          </button>
+                          <button class="btn-action btn-action-remove">
+                            <span>اقاله قرارداد</span>
                           </button>
                         </div>
                       </div>
@@ -313,11 +341,11 @@
                     ><i class="bx bx-archive"></i>قراردادهای بایگانی شده</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a href="#" class="ps-3"
                     ><i class="bx bx-id-card"></i>احراز هویت</a
                   >
-                </li>
+                </li> -->
                 <li>
                   <a href="#" class="ps-3"
                     ><i class="bx bx-support"></i>پشتیبانی</a
@@ -442,6 +470,41 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <!-- Login Form -->
+
+    <form class="login-form login-modal hidden" method="post">
+      <i class="bx bx-window-close close-modal"></i>
+
+      <h2 class="visually mb-5\">ورود به حساب کاربری</h2>
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control"
+          name="username"
+          placeholder="نام کاربری یا ایمیل"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          placeholder="رمز عبور"
+        />
+      </div>
+      <div class="mb-5">
+        <button class="btn btn-primary d-block w-100" type="submit">
+          ورود
+        </button>
+      </div>
+      <a class="forgot1" href="#">حساب کاربری ندارید؟ <u>ثبت نام کنید</u></a
+      ><a class="forgot1" href="#">
+        نام کاربری یا رمز عبور خود را فراموش کرده اید؟</a
+      >
+    </form>
+    <div class="overlay hidden"></div>
+
+    <!-- End Login Form -->
 
     <a
       href="#"

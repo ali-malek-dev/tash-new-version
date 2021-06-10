@@ -264,6 +264,9 @@ h6,
   .navbar ul {
     display: none;
   }
+  .login-button {
+    color: #68a4c4;
+  }
 }
 
 .navbar-mobile {
@@ -2478,7 +2481,7 @@ form.identity-form {
 
 .register-photo form .already {
   display: block;
-  text-align: right;
+  text-align: center;
   font-size: 12px;
   color: #6f7a85;
   opacity: 0.9;
@@ -2514,10 +2517,6 @@ form.identity-form {
 
 .register-photo form .btn-primary {
   width: 20%;
-}
-
-.register-photo form .already {
-  float: right;
 }
 
 .register-photo form .f-control {
@@ -2959,15 +2958,14 @@ main.profile-user-page .profile-recent-fav-name {
 main.profile-user-page .profile-recent-fav-col-actions {
   -ms-flex: 0 0 20%;
   -webkit-box-flex: 0;
-  flex: 0 0 20%;
-  max-width: 20%;
+  flex: 0 0 30%;
+  max-width: 30%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 0 15px;
 }
 
 main.profile-user-page .btn-action {
@@ -3073,16 +3071,23 @@ main.profile-user-page .responsive-profile-menu .dropdown-menu a i {
 }
 
 .login-form .btn-primary {
-  /*background: #f4476b;*/
   border: none;
   border-radius: 4px;
-  padding: 11px;
+  padding: 10px;
   box-shadow: none;
-  margin-top: 26px;
+  margin-top: 47px;
   text-shadow: none;
   outline: none !important;
+  background: #68a4c4;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
 }
 
+.login-form .btn-primary:hover {
+  background: #8dbad2;
+  color: #fff;
+}
 .login-form .btn-primary:active {
   transform: translateY(1px);
 }
@@ -3151,4 +3156,22 @@ main.profile-user-page .responsive-profile-menu .dropdown-menu a i {
 .hidden {
   visibility: hidden;
   opacity: 0;
+}
+
+.password-btn {
+  border: none;
+  background: #68a4c4;
+  color: #fff;
+  padding: 5px 9px;
+  border-radius: 4px;
+}
+
+.align-inputs input {
+  margin-top: auto;
+}
+
+@media (max-width: 991px) {
+  .login-button {
+    color: #68a4c4;
+  }
 }
