@@ -437,7 +437,8 @@ h6,
   height: auto;
 }
 
-#hero .btn-get-started {
+#hero .btn-get-started,
+.login-button {
   font-family: "iransans", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -453,8 +454,12 @@ h6,
   animation-delay: 0.8s;
   border: 2px solid #68a4c4;
 }
+.login-button {
+  background-color: transparent;
+}
 
-#hero .btn-get-started:hover {
+#hero .btn-get-started:hover,
+#login_button:hover {
   background: #68a4c4;
   color: #fff;
   text-decoration: none;
@@ -3054,4 +3059,96 @@ main.profile-user-page .responsive-profile-menu .dropdown-menu a i {
 .signout-icon {
   margin-left: 0.5rem;
   font-size: 24px;
+}
+
+.login-form {
+  max-width: 320px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 4px;
+  color: #505e6c;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .btn-primary {
+  /*background: #f4476b;*/
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none !important;
+}
+
+.login-form .btn-primary:active {
+  transform: translateY(1px);
+}
+
+.login-form .forgot1 {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #6f7a85;
+  opacity: 0.9;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.login-form .forgot:hover,
+.login-form .forgot:active {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.visually {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.login-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+@media (max-width: 575px) {
+  .login-modal {
+    padding: 2rem 2.2rem;
+  }
+}
+
+.close-modal {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
