@@ -2808,9 +2808,9 @@ main.profile-user-page .profile-box-tabs a.profile-box-tab {
   align-items: center;
 }
 
-main.profile-user-page .profile-box-tabs a.profile-box-tab:first-child {
-  /* border-left: 1px solid #ebebeb; */
-}
+/* main.profile-user-page .profile-box-tabs a.profile-box-tab:first-child {
+  border-left: 1px solid #ebebeb;
+} */
 
 main.profile-user-page .profile-box-tabs i {
   display: block;
