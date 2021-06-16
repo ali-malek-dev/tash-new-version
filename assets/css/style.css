@@ -2422,6 +2422,11 @@ form.identity-form {
     padding: 40px;
   }
 }
+@media (max-width: 991px) {
+  .register-photo .image-holder {
+    display: none;
+  }
+}
 
 .register-photo form h2 {
   font-size: 24px;
