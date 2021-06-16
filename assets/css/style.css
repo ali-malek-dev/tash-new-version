@@ -3184,3 +3184,48 @@ main.profile-user-page .responsive-profile-menu .dropdown-menu a i {
 main.profile-user-page .profile-menu-items li ul li a {
   padding: 12px 80px 12px 0;
 }
+
+.radio {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.radio input {
+  margin-right: 20px;
+  margin-left: 5px;
+}
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+}
+.condition {
+  border: 1px solid gray;
+  width: 200px;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #212529;
+}
+
+.table-responsive {
+  border-bottom: 1px solid #dfe7f1;
+}
+
+tbody {
+  background-color: #f7f9fc;
+  text-indent: 6px;
+}
+
+.btn-view {
+  background-color: #68a4c4;
+  border: none;
+  color: #fff;
+}
+
+.btn-view:hover {
+  background-color: #8dbad2;
+  border-color: #8dbad2;
+  color: #fff;
+}
