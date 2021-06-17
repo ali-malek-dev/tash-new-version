@@ -3274,3 +3274,38 @@ tbody {
 td {
   vertical-align: middle;
 }
+
+.table-responsive {
+  border-bottom: none;
+}
+tbody {
+  background-color: #f7f9fc;
+}
+
+.btn-view {
+  background-color: #68a4c4;
+  border: none;
+}
+.ending-list {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.ending-list h2 {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+main.profile-user-page .content-section .ending-list p {
+  font-size: 14px;
+  line-height: 30px;
+  color: #515151;
+  text-align: justify;
+}
+
+a.btn-view {
+  text-indent: 0px;
+}
