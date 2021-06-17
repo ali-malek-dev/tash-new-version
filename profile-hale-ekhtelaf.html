@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>ثبت سفارش جدید</title>
+    <title>حساب کاربری</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -34,7 +34,7 @@
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="index-page sidebar-collapse">
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex justify-content-between align-items-center">
@@ -51,9 +51,9 @@
             <li><a href="index.html">خانه</a></li>
             <li><a href="about.html">درباره ما</a></li>
             <li><a href="register.html">ثبت نام</a></li>
-            <li><a href="profile.html">حساب کاربری</a></li>
+            <li><a class="active" href="profile.html">حساب کاربری</a></li>
             <li><a href="identity.html">احراز هویت</a></li>
-            <li><a class="active" href="sefaresh.html">ثبت سفارش</a></li>
+            <li><a href="sefaresh.html">ثبت سفارش</a></li>
             <li class="dropdown">
               <a href="#"
                 ><span>منو کشویی</span> <i class="bi bi-chevron-down"></i
@@ -99,111 +99,193 @@
     </header>
     <!-- End Header -->
 
-    <main id="main">
+    <main id="main" class="profile-user-page default m-top-4">
       <!-- ======= Contact Section ======= -->
       <section class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>ثبت سفارش جدید</h2>
+            <h2>صفحه کاربری</h2>
             <ol>
               <li><a href="index.html">خانه</a></li>
-              <li>ثبت سفارش جدید</li>
+              <li>صفحه کاربری</li>
             </ol>
           </div>
         </div>
       </section>
 
-
-      <section class="register-photo">
-        <div class="form-container">
-          <form method="post">
-            <h2 class="text-center pt-4"><strong>ثبت سفارش</strong></h2>
-            <label class="mb-2" for="rule"> <strong>قانون حاکم</strong></label>
-              <select onchange="showInput(this)" id="rule" class="form-select mb-4" aria-label="Default select example" style="width: 400px;">
-                <option value="قانون جمهوري اسلامي ايران" selected> قانون جمهوري اسلامي ايران</option>
-                <option id="showCountry" value="کشور">کشور</option>
-                <option id="showConv" value="کنوانسيون">کنوانسيون</option>
-              </select>
-            <div class="country-field" style="display: none;">
-              <label class="mb-2" for="country"><strong>کشور:</strong></label>
-              <input class="form-control mb-4" type="text" id="country" placeholder="" aria-label="default input example">  
-            </div>
-            <div class="conv-field" style="display: none;">
-              <label class="mb-2" for="conv"><strong>کنوانسیون:</strong></label>
-              <input class="form-control mb-4" type="text" id="conv" placeholder="" aria-label="default input example"> 
-            </div> 
-
-            <br>
-            
-            <label class="mb-2" for="subject"><strong>موضوع قرارداد:</strong></label>
-            <input class="form-control mb-4" type="text" id="subject" placeholder="" aria-label="default input example">     
-
-            <label class="mb-2" for="formFile" class="form-label"><strong>آپلود الحاقيه و فایل شروط ضمن عقد</strong></label>
-            <input class="form-control mb-4" type="file" id="formFile">
-            <div class="mb-3">             
-              <h6 class="text-danger mb-4">پيام مدير سيستم:
-                <br>
-              چنانچه قرارداد ذيل هر نوع دادوستدي خلاف قوانين حاکم باشد بعد از کسر هزينه خسارت وارده به جهت سواستفاده از بستر نرم افزار به تشخيص مدير سيستم مبلغ واريزي فقط با راي دادگاه صالح به خريدار يا فروشنده مرجوع خواهد شد.
-            </h6>
-            
-            <label for="date"><strong>تاريخ انجام يا وقوع تعهد</strong></label>
-            <input class="mb-4" id="date" type="date" value="2017-06-01">
-            <label class="d-block mb-2" for="exampleFormControlTextarea1"><strong> متن قرارداد:</strong></label>
-            <textarea class="form-control mb-4" id="exampleFormControlTextarea1" rows="10"></textarea>
-            
-            <strong class="mb-2 d-block">خسارت از عدم انجام تعهد</strong>
-            <div class="mb-4"><span class="inline-block mb-2">برحسب <input type="number" value=""> روز،</span><span  class="inline-block"> مبلغ <input type="number" value="">  
-          
-              <select class="form-select inline-form" aria-label="Default select example" style="width: 100px;">
-                <option selected>ريال</option>
-                <option value="1">تومان</option>
-                <option value="2">دلار</option>
-                <option value="3">یورو</option>
-              </select> </span> </div>
-            
-            <label class="d-block mb-2" for="total_price"><strong>مبلغ کل قرارداد</strong></label>
+      <div class="container">
+        <div class="row">
+          <div class="profile-page col-xl-9 col-lg-8 col-md-12 order-2">
            
-              
-                <input type="number" value="" id="total_price">
-              
-              
-                <select class="form-select inline-form mb-5" aria-label="Default select example" style="width: 100px;">
-                  <option selected>ريال</option>
-                  <option value="1">تومان</option>
-                  <option value="2">دلار</option>
-                  <option value="3">یورو</option>
-                </select>
-              
-            
-        
-            <p><strong>مرجع رسيدگي به اختلاف</strong><p>
-              <div class="form-check">
-                <div class="mb-2">
-                <input class="" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  موسسه داوري مورد توافق
-                </label>
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title-tab-content">درخواست حل اختلاف</h1>
               </div>
-              <div class="mb-2">
-                <input class="" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                <label class="form-check-label" for="exampleRadios3">
-                  دادگاه صالح رسيدگي شهر
-                </label>
-              </div>
-              </div>
-              
-              <div class="form-check mt-5">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" onclick="terms_changed(this)">
-                <label class="form-check-label mb-5" for="flexCheckIndeterminate">
-               کليه موارد بالا را در صحت و سلامت کامل تائيد و مسئوليت هرگونه تعارض با قوانين آمره و اخلاق حسنه و نظم عمومي را برعهده ميگيرم.
-                </label>
-                
-                <button type="submit" class="btn btn-outline-success w-100" name="options-outlined" id="submit_button" disabled>ثبت قرارداد</button>
+              <div class="col-12 text-center">
+                <div class="right-align content-section pt-5 pb-5">
+                  <form method="POST">
+                    <label class="mb-2" for="contract"> <strong>قرارداد</strong></label>
+                    <select id="contract" class="form-select mb-4" aria-label="contract" style="width: 400px;">
+                      <option value="contract 1" selected>قرارداد اول</option>
+                      <option value="contract 2" selected>قرارداد دوم</option>
+                      <option value="contract 3" selected>قرارداد سوم</option>
+                    </select>
+                    <label class="d-block mb-2" for="requestText"><strong>متن درخواست</strong></label>
+                    <textarea class="form-control form-request mb-4" id="requestText" rows="10"></textarea>
+                    <label class="mb-2" for="contract"> <strong>موسسه داوری:</strong></label>
+                    <select id="institute" class="form-select mb-4" aria-label="institute" style="width: 400px;">
+                      <option value="institute 1" selected>موسسه اول</option>
+                      <option value="institute 2" selected>موسسه دوم</option>
+                      <option value="institute 3" selected>موسسه سوم</option>
+                    </select>
+                    <div class="make-center">
+                      <button class="btn-submit" type="submit">
+                        ثبت درخواست حل اختلاف
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
-            
-      </section>
+          </div>
+          <div
+            class="
+              profile-page-aside
+              col-xl-3 col-lg-4 col-md-6
+              center-section
+              order-1
+            "
+          >
+            <div class="profile-box">
+              <div class="profile-box-header">
+                <div class="profile-box-avatar">
+                  <img src="assets/img/user.svg" alt="" />
+                </div>
+              </div>
+              <div class="profile-box-username">غلامي</div>
+              <div class="col-12 text-center">
+                <span>موجودي کيف پول شما:</span>
+                <span>2.300.000تومان</span>
+              </div>
+              <br />
+              <div class="profile-box-tabs">
+                <!-- <a
+                  href="password-change.html"
+                  class="profile-box-tab profile-box-tab-access"
+                >
+                  <i class="now-ui-icons ui-1_lock-circle-open"></i>
+                  تغییر رمز
+                </a> -->
+                <a
+                  href="#"
+                  class="profile-box-tab profile-box-tab--sign-out text-danger"
+                >
+                  <i class="signout-icon bx bx-power-off"></i>
+                  خروج از حساب
+                </a>
+              </div>
+            </div>
+            <div class="responsive-profile-menu show-md">
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-secondary dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  حساب کاربری شما
+                </button>
+                <div class="dropdown-menu dropdown-menu-right text-right">
+                  <a href="#" class="dropdown-item active-menu"> پروفایل </a>
+                  <a href="#" class="dropdown-item"> ايجاد سفارش جديد </a>
+                  <a href="#" class="dropdown-item"> افزايش موجودي </a>
+                  <a href="#" class="dropdown-item"> وضعيت احراز هويت </a>
+                  <a href="#" class="dropdown-item"> اطلاعات شخصی </a>
+                </div>
+              </div>
+            </div>
+            <div class="profile-menu hidden-md">
+              <div class="profile-menu-header">حساب کاربری شما</div>
+              <ul class="profile-menu-items">
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bxs-dashboard"></i> داشبورد</a
+                  >
+                </li>
+
+                <li>
+                  <a   data-bs-toggle="collapse" href="#collapseBalance" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="bx bx-money"></i>امور مالی
+                  </a>
+                  <div class="collapse" id="collapseBalance">
+                    <ul>
+                      <li><a href="#">افزایش موجودی</a></li>
+                      <li><a href="#">سفارشات</a></li>
+                      <li><a href="#">برداشت</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a   data-bs-toggle="collapse" href="#collapseContract" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="bx bx-note"></i>مدیریت قرارداد ها
+                  </a>
+                  <div class="collapse" id="collapseContract">
+                    <ul>
+                      <li><a href="#">ثبت قرارداد جدید</a></li>
+                      <li><a href="#">قراردادهای در جریان</a></li>
+                      <li><a href="#">قراردادهای بایگانی شده</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <!-- <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-plus-circle"></i>ثبت قرارداد جدید</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-recycle"></i>قراردادهای در جریان</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-archive"></i>قراردادهای بایگانی شده</a
+                  >
+                </li> -->
+                <!-- <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-id-card"></i>احراز هویت</a
+                  >
+                </li> -->
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class='bx bxs-user-account'></i>ویرایش پروفایل</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-support"></i>پشتیبانی</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="ps-3 active"
+                    ><i class='bx bx-task'></i>درخواست حل اختلاف</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-power-off"></i>خروج</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
     <footer
       id="footer"
       data-aos="fade-up"
@@ -310,7 +392,7 @@
         </div>
       </div>
     </footer>
-
+    <!-- End Footer -->
     <!-- Login Form -->
 
     <form class="login-form login-modal hidden" method="post">

@@ -2446,7 +2446,6 @@ form.identity-form {
   height: 40px;
   font-family: IRANSans;
   direction: rtl;
-  /*fhoat: right;*/
 }
 .register-photo form textarea.form-control {
   height: 400px;
@@ -3228,4 +3227,46 @@ tbody {
   background-color: #8dbad2;
   border-color: #8dbad2;
   color: #fff;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.form-request {
+  background: #f7f9fc;
+  border: none;
+  border-bottom: 1px solid #dfe7f1;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 6px;
+  height: 400px;
+  font-family: IRANSans;
+  direction: rtl;
+}
+
+.btn-submit {
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: none;
+  margin-top: 47px;
+  text-shadow: none;
+  outline: none !important;
+  background: #68a4c4;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.btn-submit:hover {
+  background: #8dbad2;
+  color: #fff;
+}
+
+.make-center {
+  display: flex;
+  justify-content: center;
 }
