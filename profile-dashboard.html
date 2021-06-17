@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>احراز هویت</title>
+    <title>حساب کاربری</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -34,7 +34,7 @@
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="index-page sidebar-collapse">
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex justify-content-between align-items-center">
@@ -51,8 +51,8 @@
             <li><a href="index.html">خانه</a></li>
             <li><a href="about.html">درباره ما</a></li>
             <li><a href="register.html">ثبت نام</a></li>
-            <li><a href="profile.html">حساب کاربری</a></li>
-            <li><a class="active" href="identity.html">احراز هویت</a></li>
+            <li><a class="active" href="profile.html">حساب کاربری</a></li>
+            <li><a href="identity.html">احراز هویت</a></li>
             <li><a href="sefaresh.html">ثبت سفارش</a></li>
             <li class="dropdown">
               <a href="#"
@@ -99,267 +99,209 @@
     </header>
     <!-- End Header -->
 
-    <main id="main">
-      <!-- ======= breadcrumb Section ======= -->
+    <main id="main" class="profile-user-page default m-top-4">
+      <!-- ======= Contact Section ======= -->
       <section class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>احراز هویت</h2>
+            <h2>صفحه کاربری</h2>
             <ol>
               <li><a href="index.html">خانه</a></li>
-              <li>احراز هویت</li>
+              <li>صفحه کاربری</li>
             </ol>
           </div>
         </div>
       </section>
-      <!-- ======= End breadcrumb Section ======= -->
-      <section class="register-photo">
-        <div class="form-container">
-          <h2 class="text-center pt-4"><strong>فرم احراز هویت</strong></h2>
-          <div class="tab tab2">
-            <button
-              class="tablinks tab-active"
-              onclick="openform(event, 'stage1')"
-            >
-              اشخاص حقیقی
-            </button>
-            <button class="tablinks" onclick="openform(event, 'stage2')">
-              اشخاص حقوقی
-            </button>
+
+      <div class="container">
+        <div class="row">
+          <div class="profile-page col-xl-9 col-lg-8 col-md-12 order-2">
+           
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title-tab-content">پیام های مدیر سیستم</h1>
+              </div>
+              <div class="col-12 text-center">
+                <div class="content-section pt-5 pb-5">
+                  <div class="col-md-12 search-table-col">
+                    <div class="table-responsive table table-hover table-bordered results">
+                        <table class="table table-hover table-bordered">
+                            <thead class="bill-header cs">
+                                <tr>
+                                    <th id="trs-hd" class="col-lg-1">شماره</th>
+                                    <th id="trs-hd" class="col-lg-2">عنوان پیام</th>
+                                    <th id="trs-hd" class="col-lg-2">جزئیات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               
+                                <tr>
+                                    <td>01</td>
+                                    <td>خوش آمدید!</td>
+                                    <td><button class="btn btn-view" type="submit">مشاهده</button></td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>سفارش شما ثبت شد!</td>
+                                    <td><button class="btn btn-view" type="submit">مشاهده</button></td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>درخواست اقاله قرارداد</td>
+                                    <td><button class="btn btn-view" type="submit">مشاهده</button></td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>قرارداد با موفقیت تکمیل شد!</td>
+                                    <td><button class="btn btn-view" type="submit">مشاهده</button></td>
+                                </tr>
+                               
+                        </table>
+                    </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div id="stage1" class="tabcontent">
-            <form class="identity-form" method="post">
-              <div class="mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="name"
-                  placeholder="نام"
-                />
+          <div
+            class="
+              profile-page-aside
+              col-xl-3 col-lg-4 col-md-6
+              center-section
+              order-1
+            "
+          >
+            <div class="profile-box">
+              <div class="profile-box-header">
+                <div class="profile-box-avatar">
+                  <img src="assets/img/user.svg" alt="" />
+                </div>
               </div>
-              <div class="mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="family"
-                  placeholder="نام خانوادگی"
-                />
+              <div class="profile-box-username">غلامي</div>
+              <div class="col-12 text-center">
+                <span>موجودي کيف پول شما:</span>
+                <span>2.300.000تومان</span>
               </div>
-              <div class="mb-4">
-                <input
-                  type="number"
-                  class="form-control"
-                  name="national"
-                  placeholder="کد ملی"
-                />
+              <br />
+              <div class="profile-box-tabs">
+                <!-- <a
+                  href="password-change.html"
+                  class="profile-box-tab profile-box-tab-access"
+                >
+                  <i class="now-ui-icons ui-1_lock-circle-open"></i>
+                  تغییر رمز
+                </a> -->
+                <a
+                  href="#"
+                  class="profile-box-tab profile-box-tab--sign-out text-danger"
+                >
+                  <i class="signout-icon bx bx-power-off"></i>
+                  خروج از حساب
+                </a>
               </div>
-              <div class="mb-4">
-                <input
-                  type="tel"
-                  class="form-control"
-                  name="phone"
-                  placeholder="شماره تلفن ثابت(اختیاری)"
-                />
+            </div>
+            <div class="responsive-profile-menu show-md">
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-secondary dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  حساب کاربری شما
+                </button>
+                <div class="dropdown-menu dropdown-menu-right text-right">
+                  <a href="#" class="dropdown-item active-menu"> پروفایل </a>
+                  <a href="#" class="dropdown-item"> ايجاد سفارش جديد </a>
+                  <a href="#" class="dropdown-item"> افزايش موجودي </a>
+                  <a href="#" class="dropdown-item"> وضعيت احراز هويت </a>
+                  <a href="#" class="dropdown-item"> اطلاعات شخصی </a>
+                </div>
               </div>
-              <div class="mb-4">
-                <input
-                  type="tel"
-                  class="form-control"
-                  name="mobile"
-                  placeholder="شماره تلفن همراه"
-                />
-              </div>
-              <div class="mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="shaba"
-                  placeholder="شماره شبا"
-                />
-              </div>
-
-              <lable>آپلود عکس کارت ملی</lable>
-              <div class="mb-4">
-                <input type="file" class="form-control" name="uphoad" />
-              </div>
-              <lable>آپلود عکس شخصی(اختیاری)</lable>
-              <div class="mb-4">
-                <input type="file" class="form-control" name="uphoad -img" />
-              </div>
-              <lable>آپلود عکس سلفی با عدد اعلامی از سیستم</lable> 123
-              <div class="mb-4">
-                <input type="file" class="form-control" name="uphoad-image" />
-              </div>
-
-              <div class="mb-4">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  placeholder="آدرس الکترونیک"
-                />
-              </div>
-              <lable>آدرس محل سکونت و کار</lable>
-              <div class="mb-4">
-                <textarea rows="4" cols="50" class="f-control p-2"></textarea>
-              </div>
-
-              <div class="mb-4">
-                <div class="form-check">
-                  <label class="form-check-label"
-                    ><input type="checkbox" class="form-check-input" />قوانین و
-                    مقررات سایت را مطالعه کرده و قبول دارم</label
+            </div>
+            <div class="profile-menu hidden-md">
+              <div class="profile-menu-header">حساب کاربری شما</div>
+              <ul class="profile-menu-items">
+                <li>
+                  <a href="#" class="ps-3 active"
+                    ><i class="bx bxs-dashboard"></i> داشبورد</a
                   >
-                </div>
-              </div>
-              <div class="mb-4">
-                <div class="make-center">
-                  <button class="btn btn-primary d-block" type="submit">
-                    ثبت اطلاعات
-                  </button>
-                </div>
-              </div>
-              <a class="already" href="#">حساب کاربری دارید؟ وارد شوید</a>
-            </form>
-          </div>
-          <div id="stage2" class="tabcontent" style="display: none">
-            <form class="identity-form" method="post">
-              <div class="mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="name"
-                  placeholder="نام شرکت"
-                />
-              </div>
-              <div class="mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="ceo first name"
-                  placeholder="نام مدیر عامل"
-                />
-              </div>
-              <div class="mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="ceo last name"
-                  placeholder="نام خانوادگی مدیر عامل"
-                />
-              </div>
-              <div class="mb-4">
-                <input
-                  type="number"
-                  class="form-control"
-                  name="national-code"
-                  placeholder="کد ملی"
-                />
-              </div>
+                </li>
 
-              <lable>آپلود اسکن روزنامه رسمی </lable>
-              <div class="mb-4">
-                <input type="file" class="form-control" name="uphoad-paper" />
-              </div>
-              <lable>آپلود اساسنامه شرکت </lable>
-              <div class="mb-4">
-                <input type="file" class="form-control" name="uphoad-" />
-              </div>
-              <lable>آپلود سربرگ و مهر شرکت </lable>
-              <div class="mb-4">
-                <input type="file" class="form-control" name="uphoad-" />
-              </div>
-              <div class="mb-4">
-                <input
-                  type="tel"
-                  class="form-control"
-                  name="phone"
-                  placeholder="شماره تلفن ثابت(اختیاری)"
-                />
-              </div>
-              <div class="mb-4">
-                <input
-                  type="tel"
-                  class="form-control"
-                  name="mobile"
-                  placeholder="شماره تلفن همراه"
-                />
-              </div>
-              <div class="mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="shaba"
-                  placeholder="شماره شبا"
-                />
-              </div>
-              <div class="mb-4">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  placeholder="آدرس الکترونیک"
-                />
-              </div>
-              <lable>آدرس محل استقرار و دفتر اصلی شرکت</lable>
-              <div class="mb-4">
-                <textarea rows="4" cols="50" class="f-control p-2"> </textarea>
-              </div>
-              <div class="mb-4">
-                <input
-                  type="url"
-                  class="form-control"
-                  name="url"
-                  placeholder="آدرس سایت شرکت"
-                />
-              </div>
-              <div class="mb-4">
-                <div class="form-check">
-                  <label class="form-check-label"
-                    ><input type="checkbox" class="form-check-input" />قوانین و
-                    مقررات سایت را مطالعه کرده و قبول دارم</label
+                <li>
+                  <a   data-bs-toggle="collapse" href="#collapseBalance" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="bx bx-money"></i>امور مالی
+                  </a>
+                  <div class="collapse" id="collapseBalance">
+                    <ul>
+                      <li><a href="#">افزایش موجودی</a></li>
+                      <li><a href="#">سفارشات</a></li>
+                      <li><a href="#">برداشت</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a   data-bs-toggle="collapse" href="#collapseContract" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="bx bx-note"></i>مدیریت قرارداد ها
+                  </a>
+                  <div class="collapse" id="collapseContract">
+                    <ul>
+                      <li><a href="#">ثبت قرارداد جدید</a></li>
+                      <li><a href="#">قراردادهای در جریان</a></li>
+                      <li><a href="#">قراردادهای بایگانی شده</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <!-- <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-plus-circle"></i>ثبت قرارداد جدید</a
                   >
-                </div>
-              </div>
-              <div class="mb-4">
-                <div class="make-center">
-                  <button class="btn btn-primary d-block" type="submit">
-                    ثبت اطلاعات
-                  </button>
-                </div>
-              </div>
-              <a class="already" href="#">حساب کاربری دارید؟ وارد شوید</a>
-            </form>
+                </li>
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-recycle"></i>قراردادهای در جریان</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-archive"></i>قراردادهای بایگانی شده</a
+                  >
+                </li> -->
+                <!-- <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-id-card"></i>احراز هویت</a
+                  >
+                </li> -->
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class='bx bxs-user-account'></i>ویرایش پروفایل</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-support"></i>پشتیبانی</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class='bx bx-task'></i>درخواست حل اختلاف</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="ps-3"
+                    ><i class="bx bx-power-off"></i>خروج</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-
-          <script>
-            function openform(evt, formName) {
-              var i, tabcontent, tablinks;
-
-              tabcontent = document.getElementsByClassName("tabcontent");
-              for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-              }
-
-              tablinks = document.getElementsByClassName("tablinks");
-              for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(
-                  " active",
-                  ""
-                );
-              }
-              document.getElementById(formName).style.display = "block";
-              evt.currentTarget.className += " active";
-            }
-          </script>
         </div>
-      </section>
-      <!-- End Map Section -->
+      </div>
     </main>
-    <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
     <footer
       id="footer"
       data-aos="fade-up"

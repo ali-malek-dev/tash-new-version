@@ -3270,3 +3270,7 @@ tbody {
   display: flex;
   justify-content: center;
 }
+
+td {
+  vertical-align: middle;
+}
